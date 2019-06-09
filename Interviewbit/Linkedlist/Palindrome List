@@ -2,14 +2,16 @@
 
 - High level Approach:
 
-1. Calculate the centre of the list from the total number of nodes and then reverse the list after that centre. centreNode = (nodeCount / 2) + 1 [Works well for both even & odd length list]
+1. Calculate the centre of the list from the total number of nodes and then reverse the list after that centre. 
+   centreNode = (nodeCount / 2) + 1 [Works well for both even & odd length list]
 
 2. Now compare the node value from start till centre - 1 / centre - 2 [depending on odd / even list] vs centre + 1 till end of list.
 
 3. If all the values match return 1 else return 0.
 
 - Note: 
-For list with even length, it is imp to check whether the centre node and centreNode - 1 are same, coz if that holds true then only the list will be palindrome. 
+  For list with even length, it is imp to check whether the centre node and centreNode - 1 are same, 
+  because if that holds true then only the list will be palindrome. 
 
 - Time Complexity: O(n)
 - Space Complexity: O(1)
